@@ -1,7 +1,0 @@
-services:
-  - type: web
-    name: n8n-working
-    env: docker
-    plan: free
-    docker:
-      dockerfilePath: ./Dockerfile
