@@ -1,20 +1,7 @@
 services:
   - type: web
-    name: my-n8n
+    name: n8n-simple
     env: docker
     plan: free
     docker:
       dockerfilePath: ./Dockerfile
-    envVars:
-      - key: N8N_BASIC_AUTH_ACTIVE
-        value: true
-      - key: N8N_BASIC_AUTH_USER
-        value: admin
-      - key: N8N_BASIC_AUTH_PASSWORD
-        value: YourStrongPassword123
-      - key: N8N_HOST
-        value: 0.0.0.0
-      - key: N8N_PORT
-        value: 5678
-      - key: NODE_ENV
-        value: production
